@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { motion, Variants } from 'framer-motion'
 import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi'
 import { Typewriter } from 'react-simple-typewriter'
-import { useEffect } from 'react'
+
 
 const containerVariants: Variants = {
   hidden: { 

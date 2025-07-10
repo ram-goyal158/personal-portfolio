@@ -58,11 +58,11 @@ export default function About() {
             variants={itemVariants}
           >
             <p className="text-lg text-slate-300 leading-relaxed">
-              Hello! I'm Ram Goyal, a developer from India with a passion for creating beautiful and functional things for the internet. My journey into web development started with a simple curiosity, which has now grown into a full-fledged career.
+              Hello! I&#39;m Ram Goyal, a developer from India with a passion for creating beautiful and functional things for the internet. My journey into web development started with a simple curiosity, which has now grown into a full-fledged career.
               <br/><br/>
               I specialize in the <strong className="text-white">MERN stack</strong>, with a particular love for <strong className="text-white">Next.js</strong> and its powerful ecosystem. I enjoy the entire process of development, from brainstorming ideas and designing user interfaces to building robust back-end APIs and deploying applications.
               <br/><br/>
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source, or brewing a perfect cup of coffee.
+              When I&#39;m not coding, you can find me exploring new technologies, contributing to open-source, or brewing a perfect cup of coffee.
             </p>
           </motion.div>
           

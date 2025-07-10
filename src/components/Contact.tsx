@@ -55,7 +55,7 @@ export default function Contact() {
         </motion.h2>
 
         <motion.p className="text-lg text-slate-400 max-w-2xl mx-auto mb-12" variants={itemVariants}>
-          I'm currently open to new opportunities and collaborations. Whether you have a question, a project idea, or just want to say hi, my inbox is always open. I'll get back to you as soon as possible!
+          I&#39;m currently open to new opportunities and collaborations. Whether you have a question, a project idea, or just want to say hi, my inbox is always open. I&#39;ll get back to you as soon as possible!
         </motion.p>
 
         <div className="grid md:grid-cols-2 gap-10">
