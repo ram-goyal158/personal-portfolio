@@ -1,26 +1,45 @@
-@import "tailwindcss";
+/* src/app/globals.css */
 
+/* upword lines */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Color Palette & Fonts */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bg: #0B0C10;      /* Near Black - Main Background */
+  --color-surface: #1F2833; /* Dark Slate - For Cards/Surfaces */
+  --color-text-primary: #C5C6C7; /* Light Gray - Main Text */
+  --color-text-secondary: #66FCF1; /* Bright Aqua - Accent Text */
+  --color-accent: #45A29E;   /* Muted Teal - Accent Color */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  /* font-family in layout.tsx instead of globals.css;  */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* font-family in layout.tsx instead of globals.css;*/
+  color: #FFFFFF; /* Pure white for headings to pop */
+  font-weight: 700;
+}
+
+/* Updated Button Styles for the new theme */
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-500
+    hover:from-cyan-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-75
+    transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg;
+    .glassmorphism {
+    @apply bg-slate-800/60 backdrop-blur-md border border-slate-700/80 rounded-2xl;
+  }
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg font-semibold text-cyan-300 border-2 border-cyan-400
+    hover:bg-cyan-400/10 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:ring-opacity-75
+    transition-all duration-300 ease-in-out transform hover:scale-105;
+  }
 }
